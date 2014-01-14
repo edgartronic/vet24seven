@@ -32,6 +32,7 @@
 		31576B141884E57C00BB62E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B131884E57C00BB62E5 /* SystemConfiguration.framework */; };
 		31576B161884E58B00BB62E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B151884E58B00BB62E5 /* libz.dylib */; };
 		31576B181884E59400BB62E5 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B171884E59400BB62E5 /* libresolv.dylib */; };
+		31576B1B1884F59C00BB62E5 /* VideoChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		31576B131884E57C00BB62E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		31576B151884E58B00BB62E5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		31576B171884E59400BB62E5 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		31576B191884F59C00BB62E5 /* VideoChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoChatViewController.h; path = "vet24seven-ipad/VideoChatViewController.h"; sourceTree = SOURCE_ROOT; };
+		31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoChatViewController.m; path = "vet24seven-ipad/VideoChatViewController.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				31576B031884E4F100BB62E5 /* ShowKit.framework */,
+				31576B191884F59C00BB62E5 /* VideoChatViewController.h */,
+				31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */,
 			);
 			path = ThirdParty;
 			sourceTree = SOURCE_ROOT;
@@ -303,6 +308,7 @@
 			files = (
 				31576AE4187E4DA800BB62E5 /* ViewController.m in Sources */,
 				31576ADE187E4DA800BB62E5 /* AppDelegate.m in Sources */,
+				31576B1B1884F59C00BB62E5 /* VideoChatViewController.m in Sources */,
 				31576ADA187E4DA800BB62E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

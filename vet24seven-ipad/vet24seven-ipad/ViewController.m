@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import <ShowKit/ShowKit.h>
+#import "VideoChatViewController.h"
 
 #define VET24SEVEN_URL_IPHONE @"http://demo.vet24seven.com/vet"
 
 @interface ViewController () {
     UIWebView *appWebView;
 }
+
+- (void) launchVideoChatWithUsername: (NSString *) user andPass: (NSString *) password;
 
 @end
 
@@ -31,7 +34,18 @@
     
     NSURL *_url = [NSURL URLWithString: VET24SEVEN_URL_IPHONE];
     [appWebView loadRequest: [NSURLRequest requestWithURL: _url]];
+    
+}
 
+- (void) viewDidAppear:(BOOL)animated {
+    [self launchVideoChatWithUsername: nil andPass: nil];
+}
+
+- (void) launchVideoChatWithUsername: (NSString *) user andPass: (NSString *) password {
+    
+    VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
+    [self presentViewController: videoChatController animated: YES completion: nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +55,7 @@
 }
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
     
     return YES;
 }
