@@ -7,15 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import <ShowKit/ShowKit.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(connectionStateChanged:)
+     name:SHKConnectionStatusChangedNotification
+     object:nil];
+    
+    [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,6 +51,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) connectionStateChanged: (NSNotification*) notification
+{
+    SHKNotification* showNotice;
+    NSString* value;
+    
+    showNotice = (SHKNotification*) [notification object];
+    value = (NSString*) showNotice.Value;
+    
+    if ([value isEqualToString: SHKConnectionStatusCallTerminated]){
+        //call is terminated
+    } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
+        //call just got changed to in call,
+        //this is where you would display anything inside the call
+    } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
+        NSLog(@"user logged in.");
+        
+    } else if ([value isEqualToString: SHKConnectionStatusNotConnected]) {
+        //user is no longer connected
+    } else if ([value isEqualToString: SHKConnectionStatusLoginFailed]) {
+        //login has failed
+        NSLog(@"user login failed.");
+    } else if ([value isEqualToString: SHKConnectionStatusCallIncoming]) {
+        //user has a call incoming, accept or reject the call
+    }
 }
 
 @end
