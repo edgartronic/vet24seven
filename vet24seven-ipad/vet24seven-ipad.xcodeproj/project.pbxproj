@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31576ACE187E4DA800BB62E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576ACD187E4DA800BB62E5 /* Foundation.framework */; };
+		31576AD0187E4DA800BB62E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576ACF187E4DA800BB62E5 /* CoreGraphics.framework */; };
+		31576AD2187E4DA800BB62E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576AD1187E4DA800BB62E5 /* UIKit.framework */; };
+		31576AD8187E4DA800BB62E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31576AD6187E4DA800BB62E5 /* InfoPlist.strings */; };
+		31576ADA187E4DA800BB62E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576AD9187E4DA800BB62E5 /* main.m */; };
+		31576ADE187E4DA800BB62E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576ADD187E4DA800BB62E5 /* AppDelegate.m */; };
+		31576AE1187E4DA800BB62E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31576ADF187E4DA800BB62E5 /* Main.storyboard */; };
+		31576AE4187E4DA800BB62E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576AE3187E4DA800BB62E5 /* ViewController.m */; };
+		31576AE6187E4DA900BB62E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31576AE5187E4DA900BB62E5 /* Images.xcassets */; };
+		31576AED187E4DA900BB62E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576AEC187E4DA900BB62E5 /* XCTest.framework */; };
+		31576AEE187E4DA900BB62E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576ACD187E4DA800BB62E5 /* Foundation.framework */; };
+		31576AEF187E4DA900BB62E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576AD1187E4DA800BB62E5 /* UIKit.framework */; };
+		31576AF7187E4DA900BB62E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31576AF5187E4DA900BB62E5 /* InfoPlist.strings */; };
+		31576AF9187E4DA900BB62E5 /* vet24seven_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31576AF0187E4DA900BB62E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31576AC2187E4DA800BB62E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31576AC9187E4DA800BB62E5;
+			remoteInfo = "vet24seven-ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31576ACA187E4DA800BB62E5 /* vet24seven-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vet24seven-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31576ACD187E4DA800BB62E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31576ACF187E4DA800BB62E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31576AD1187E4DA800BB62E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31576AD5187E4DA800BB62E5 /* vet24seven-ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vet24seven-ipad-Info.plist"; sourceTree = "<group>"; };
+		31576AD7187E4DA800BB62E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31576AD9187E4DA800BB62E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31576ADB187E4DA800BB62E5 /* vet24seven-ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vet24seven-ipad-Prefix.pch"; sourceTree = "<group>"; };
+		31576ADC187E4DA800BB62E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		31576ADD187E4DA800BB62E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		31576AE0187E4DA800BB62E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31576AE2187E4DA800BB62E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31576AE3187E4DA800BB62E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31576AE5187E4DA900BB62E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31576AEB187E4DA900BB62E5 /* vet24seven-ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vet24seven-ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31576AEC187E4DA900BB62E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		31576AF4187E4DA900BB62E5 /* vet24seven-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vet24seven-ipadTests-Info.plist"; sourceTree = "<group>"; };
+		31576AF6187E4DA900BB62E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vet24seven_ipadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31576AC7187E4DA800BB62E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AD0187E4DA800BB62E5 /* CoreGraphics.framework in Frameworks */,
+				31576AD2187E4DA800BB62E5 /* UIKit.framework in Frameworks */,
+				31576ACE187E4DA800BB62E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31576AE8187E4DA900BB62E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AED187E4DA900BB62E5 /* XCTest.framework in Frameworks */,
+				31576AEF187E4DA900BB62E5 /* UIKit.framework in Frameworks */,
+				31576AEE187E4DA900BB62E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31576AC1187E4DA800BB62E5 = {
+			isa = PBXGroup;
+			children = (
+				31576AD3187E4DA800BB62E5 /* vet24seven-ipad */,
+				31576AF2187E4DA900BB62E5 /* vet24seven-ipadTests */,
+				31576ACC187E4DA800BB62E5 /* Frameworks */,
+				31576ACB187E4DA800BB62E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31576ACB187E4DA800BB62E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31576ACA187E4DA800BB62E5 /* vet24seven-ipad.app */,
+				31576AEB187E4DA900BB62E5 /* vet24seven-ipadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31576ACC187E4DA800BB62E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31576ACD187E4DA800BB62E5 /* Foundation.framework */,
+				31576ACF187E4DA800BB62E5 /* CoreGraphics.framework */,
+				31576AD1187E4DA800BB62E5 /* UIKit.framework */,
+				31576AEC187E4DA900BB62E5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31576AD3187E4DA800BB62E5 /* vet24seven-ipad */ = {
+			isa = PBXGroup;
+			children = (
+				31576ADC187E4DA800BB62E5 /* AppDelegate.h */,
+				31576ADD187E4DA800BB62E5 /* AppDelegate.m */,
+				31576ADF187E4DA800BB62E5 /* Main.storyboard */,
+				31576AE2187E4DA800BB62E5 /* ViewController.h */,
+				31576AE3187E4DA800BB62E5 /* ViewController.m */,
+				31576AE5187E4DA900BB62E5 /* Images.xcassets */,
+				31576AD4187E4DA800BB62E5 /* Supporting Files */,
+			);
+			path = "vet24seven-ipad";
+			sourceTree = "<group>";
+		};
+		31576AD4187E4DA800BB62E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31576AD5187E4DA800BB62E5 /* vet24seven-ipad-Info.plist */,
+				31576AD6187E4DA800BB62E5 /* InfoPlist.strings */,
+				31576AD9187E4DA800BB62E5 /* main.m */,
+				31576ADB187E4DA800BB62E5 /* vet24seven-ipad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31576AF2187E4DA900BB62E5 /* vet24seven-ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */,
+				31576AF3187E4DA900BB62E5 /* Supporting Files */,
+			);
+			path = "vet24seven-ipadTests";
+			sourceTree = "<group>";
+		};
+		31576AF3187E4DA900BB62E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31576AF4187E4DA900BB62E5 /* vet24seven-ipadTests-Info.plist */,
+				31576AF5187E4DA900BB62E5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31576AC9187E4DA800BB62E5 /* vet24seven-ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31576AFC187E4DA900BB62E5 /* Build configuration list for PBXNativeTarget "vet24seven-ipad" */;
+			buildPhases = (
+				31576AC6187E4DA800BB62E5 /* Sources */,
+				31576AC7187E4DA800BB62E5 /* Frameworks */,
+				31576AC8187E4DA800BB62E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vet24seven-ipad";
+			productName = "vet24seven-ipad";
+			productReference = 31576ACA187E4DA800BB62E5 /* vet24seven-ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31576AEA187E4DA900BB62E5 /* vet24seven-ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31576AFF187E4DA900BB62E5 /* Build configuration list for PBXNativeTarget "vet24seven-ipadTests" */;
+			buildPhases = (
+				31576AE7187E4DA900BB62E5 /* Sources */,
+				31576AE8187E4DA900BB62E5 /* Frameworks */,
+				31576AE9187E4DA900BB62E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31576AF1187E4DA900BB62E5 /* PBXTargetDependency */,
+			);
+			name = "vet24seven-ipadTests";
+			productName = "vet24seven-ipadTests";
+			productReference = 31576AEB187E4DA900BB62E5 /* vet24seven-ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31576AC2187E4DA800BB62E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Edgar Nunez";
+				TargetAttributes = {
+					31576AEA187E4DA900BB62E5 = {
+						TestTargetID = 31576AC9187E4DA800BB62E5;
+					};
+				};
+			};
+			buildConfigurationList = 31576AC5187E4DA800BB62E5 /* Build configuration list for PBXProject "vet24seven-ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31576AC1187E4DA800BB62E5;
+			productRefGroup = 31576ACB187E4DA800BB62E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31576AC9187E4DA800BB62E5 /* vet24seven-ipad */,
+				31576AEA187E4DA900BB62E5 /* vet24seven-ipadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31576AC8187E4DA800BB62E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AE6187E4DA900BB62E5 /* Images.xcassets in Resources */,
+				31576AD8187E4DA800BB62E5 /* InfoPlist.strings in Resources */,
+				31576AE1187E4DA800BB62E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31576AE9187E4DA900BB62E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AF7187E4DA900BB62E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31576AC6187E4DA800BB62E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AE4187E4DA800BB62E5 /* ViewController.m in Sources */,
+				31576ADE187E4DA800BB62E5 /* AppDelegate.m in Sources */,
+				31576ADA187E4DA800BB62E5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31576AE7187E4DA900BB62E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31576AF9187E4DA900BB62E5 /* vet24seven_ipadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31576AF1187E4DA900BB62E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31576AC9187E4DA800BB62E5 /* vet24seven-ipad */;
+			targetProxy = 31576AF0187E4DA900BB62E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31576AD6187E4DA800BB62E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31576AD7187E4DA800BB62E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31576ADF187E4DA800BB62E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31576AE0187E4DA800BB62E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31576AF5187E4DA900BB62E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31576AF6187E4DA900BB62E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31576AFA187E4DA900BB62E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		31576AFB187E4DA900BB62E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31576AFD187E4DA900BB62E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
+				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		31576AFE187E4DA900BB62E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Edgar Nunez (4326L6N74Q)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
+				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		31576B00187E4DA900BB62E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/vet24seven-ipad.app/vet24seven-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "vet24seven-ipadTests/vet24seven-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31576B01187E4DA900BB62E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/vet24seven-ipad.app/vet24seven-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
+				INFOPLIST_FILE = "vet24seven-ipadTests/vet24seven-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31576AC5187E4DA800BB62E5 /* Build configuration list for PBXProject "vet24seven-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31576AFA187E4DA900BB62E5 /* Debug */,
+				31576AFB187E4DA900BB62E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31576AFC187E4DA900BB62E5 /* Build configuration list for PBXNativeTarget "vet24seven-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31576AFD187E4DA900BB62E5 /* Debug */,
+				31576AFE187E4DA900BB62E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31576AFF187E4DA900BB62E5 /* Build configuration list for PBXNativeTarget "vet24seven-ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31576B00187E4DA900BB62E5 /* Debug */,
+				31576B01187E4DA900BB62E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31576AC2187E4DA800BB62E5 /* Project object */;
+}
