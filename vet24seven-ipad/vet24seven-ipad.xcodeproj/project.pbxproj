@@ -21,6 +21,17 @@
 		31576AEF187E4DA900BB62E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576AD1187E4DA800BB62E5 /* UIKit.framework */; };
 		31576AF7187E4DA900BB62E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31576AF5187E4DA900BB62E5 /* InfoPlist.strings */; };
 		31576AF9187E4DA900BB62E5 /* vet24seven_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */; };
+		31576B041884E4F100BB62E5 /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B031884E4F100BB62E5 /* ShowKit.framework */; };
+		31576B061884E51B00BB62E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B051884E51B00BB62E5 /* AVFoundation.framework */; };
+		31576B081884E53000BB62E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B071884E53000BB62E5 /* OpenGLES.framework */; };
+		31576B0A1884E53900BB62E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B091884E53900BB62E5 /* QuartzCore.framework */; };
+		31576B0C1884E54300BB62E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B0B1884E54300BB62E5 /* CFNetwork.framework */; };
+		31576B0E1884E55800BB62E5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B0D1884E55800BB62E5 /* CoreVideo.framework */; };
+		31576B101884E56900BB62E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B0F1884E56900BB62E5 /* CoreMedia.framework */; };
+		31576B121884E57200BB62E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B111884E57200BB62E5 /* AudioToolbox.framework */; };
+		31576B141884E57C00BB62E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B131884E57C00BB62E5 /* SystemConfiguration.framework */; };
+		31576B161884E58B00BB62E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B151884E58B00BB62E5 /* libz.dylib */; };
+		31576B181884E59400BB62E5 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B171884E59400BB62E5 /* libresolv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,17 @@
 		31576AF4187E4DA900BB62E5 /* vet24seven-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vet24seven-ipadTests-Info.plist"; sourceTree = "<group>"; };
 		31576AF6187E4DA900BB62E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vet24seven_ipadTests.m; sourceTree = "<group>"; };
+		31576B031884E4F100BB62E5 /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShowKit.framework; sourceTree = "<group>"; };
+		31576B051884E51B00BB62E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		31576B071884E53000BB62E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		31576B091884E53900BB62E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		31576B0B1884E54300BB62E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		31576B0D1884E55800BB62E5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		31576B0F1884E56900BB62E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		31576B111884E57200BB62E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31576B131884E57C00BB62E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		31576B151884E58B00BB62E5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		31576B171884E59400BB62E5 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +82,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31576B181884E59400BB62E5 /* libresolv.dylib in Frameworks */,
+				31576B161884E58B00BB62E5 /* libz.dylib in Frameworks */,
+				31576B141884E57C00BB62E5 /* SystemConfiguration.framework in Frameworks */,
+				31576B121884E57200BB62E5 /* AudioToolbox.framework in Frameworks */,
+				31576B101884E56900BB62E5 /* CoreMedia.framework in Frameworks */,
 				31576AD0187E4DA800BB62E5 /* CoreGraphics.framework in Frameworks */,
+				31576B0E1884E55800BB62E5 /* CoreVideo.framework in Frameworks */,
+				31576B0C1884E54300BB62E5 /* CFNetwork.framework in Frameworks */,
+				31576B0A1884E53900BB62E5 /* QuartzCore.framework in Frameworks */,
+				31576B081884E53000BB62E5 /* OpenGLES.framework in Frameworks */,
+				31576B061884E51B00BB62E5 /* AVFoundation.framework in Frameworks */,
 				31576AD2187E4DA800BB62E5 /* UIKit.framework in Frameworks */,
+				31576B041884E4F100BB62E5 /* ShowKit.framework in Frameworks */,
 				31576ACE187E4DA800BB62E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +134,16 @@
 		31576ACC187E4DA800BB62E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31576B171884E59400BB62E5 /* libresolv.dylib */,
+				31576B151884E58B00BB62E5 /* libz.dylib */,
+				31576B131884E57C00BB62E5 /* SystemConfiguration.framework */,
+				31576B111884E57200BB62E5 /* AudioToolbox.framework */,
+				31576B0F1884E56900BB62E5 /* CoreMedia.framework */,
+				31576B0D1884E55800BB62E5 /* CoreVideo.framework */,
+				31576B0B1884E54300BB62E5 /* CFNetwork.framework */,
+				31576B091884E53900BB62E5 /* QuartzCore.framework */,
+				31576B071884E53000BB62E5 /* OpenGLES.framework */,
+				31576B051884E51B00BB62E5 /* AVFoundation.framework */,
 				31576ACD187E4DA800BB62E5 /* Foundation.framework */,
 				31576ACF187E4DA800BB62E5 /* CoreGraphics.framework */,
 				31576AD1187E4DA800BB62E5 /* UIKit.framework */,
@@ -112,6 +155,7 @@
 		31576AD3187E4DA800BB62E5 /* vet24seven-ipad */ = {
 			isa = PBXGroup;
 			children = (
+				31576B021884E4F100BB62E5 /* ThirdParty */,
 				31576ADC187E4DA800BB62E5 /* AppDelegate.h */,
 				31576ADD187E4DA800BB62E5 /* AppDelegate.m */,
 				31576ADF187E4DA800BB62E5 /* Main.storyboard */,
@@ -151,6 +195,14 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		31576B021884E4F100BB62E5 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				31576B031884E4F100BB62E5 /* ShowKit.framework */,
+			);
+			path = ThirdParty;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -380,9 +432,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven-ipad/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
 				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,9 +451,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Edgar Nunez (4326L6N74Q)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven-ipad/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
 				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,6 +525,7 @@
 				31576AFE187E4DA900BB62E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31576AFF187E4DA900BB62E5 /* Build configuration list for PBXNativeTarget "vet24seven-ipadTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +534,7 @@
 				31576B01187E4DA900BB62E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
