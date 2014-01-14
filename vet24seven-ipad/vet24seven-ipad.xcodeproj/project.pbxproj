@@ -442,6 +442,7 @@
 				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,6 +464,7 @@
 				INFOPLIST_FILE = "vet24seven-ipad/vet24seven-ipad-Info.plist";
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
