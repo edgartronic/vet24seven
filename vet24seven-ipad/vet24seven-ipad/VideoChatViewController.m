@@ -27,7 +27,7 @@
          name:SHKConnectionStatusChangedNotification
          object:nil];
         
-        [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
+        [ShowKit login: @"238.calbertlai" password: @"12341234"];
     }
     return self;
 }

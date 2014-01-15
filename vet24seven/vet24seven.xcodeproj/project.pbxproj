@@ -21,8 +21,8 @@
 		310B0959187A6291006C24DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310B093B187A6291006C24DE /* UIKit.framework */; };
 		310B0961187A6291006C24DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 310B095F187A6291006C24DE /* InfoPlist.strings */; };
 		310B0963187A6291006C24DE /* vet24sevenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B0962187A6291006C24DE /* vet24sevenTests.m */; };
-		310B096F187A6635006C24DE /* v24s-iPhone5-launch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 310B096D187A6635006C24DE /* v24s-iPhone5-launch-icon.png */; };
-		310B0970187A6635006C24DE /* v24s-iphone5-launch-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 310B096E187A6635006C24DE /* v24s-iphone5-launch-screen.png */; };
+		313D493718862C53005274B0 /* v24s-iPhone5-launch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */; };
+		313D493918862C5F005274B0 /* v24s-iphone5-launch-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		310B095E187A6291006C24DE /* vet24sevenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vet24sevenTests-Info.plist"; sourceTree = "<group>"; };
 		310B0960187A6291006C24DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		310B0962187A6291006C24DE /* vet24sevenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vet24sevenTests.m; sourceTree = "<group>"; };
-		310B096D187A6635006C24DE /* v24s-iPhone5-launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "v24s-iPhone5-launch-icon.png"; path = "../../../Downloads/v24s-iPhone5-launch-icon.png"; sourceTree = "<group>"; };
-		310B096E187A6635006C24DE /* v24s-iphone5-launch-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "v24s-iphone5-launch-screen.png"; path = "../../../Downloads/v24s-iphone5-launch-screen.png"; sourceTree = "<group>"; };
+		313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v24s-iPhone5-launch-icon.png"; sourceTree = "<group>"; };
+		313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v24s-iphone5-launch-screen.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 		310B093D187A6291006C24DE /* vet24seven */ = {
 			isa = PBXGroup;
 			children = (
-				310B096D187A6635006C24DE /* v24s-iPhone5-launch-icon.png */,
-				310B096E187A6635006C24DE /* v24s-iphone5-launch-screen.png */,
+				313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */,
+				313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */,
 				310B096C187A6302006C24DE /* iPad */,
 				310B0946187A6291006C24DE /* AppDelegate.h */,
 				310B0947187A6291006C24DE /* AppDelegate.m */,
@@ -243,10 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				310B0950187A6291006C24DE /* Images.xcassets in Resources */,
-				310B096F187A6635006C24DE /* v24s-iPhone5-launch-icon.png in Resources */,
+				313D493718862C53005274B0 /* v24s-iPhone5-launch-icon.png in Resources */,
 				310B0942187A6291006C24DE /* InfoPlist.strings in Resources */,
 				310B094B187A6291006C24DE /* Main.storyboard in Resources */,
-				310B0970187A6635006C24DE /* v24s-iphone5-launch-screen.png in Resources */,
+				313D493918862C5F005274B0 /* v24s-iphone5-launch-screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +399,7 @@
 				INFOPLIST_FILE = "vet24seven/vet24seven-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -415,7 +415,7 @@
 				INFOPLIST_FILE = "vet24seven/vet24seven-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
