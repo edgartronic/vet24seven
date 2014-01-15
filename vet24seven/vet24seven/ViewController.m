@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <ShowKit/ShowKit.h>
+
 #define VET24SEVEN_URL_IPHONE @"http://demo.vet24seven.com"
 
 @interface ViewController () {
