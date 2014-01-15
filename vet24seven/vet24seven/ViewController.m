@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "VideoChatViewController.h"
 #import <ShowKit/ShowKit.h>
 
 #define VET24SEVEN_URL_IPHONE @"http://demo.vet24seven.com"
@@ -80,7 +80,10 @@
     if ([value isEqualToString: SHKConnectionStatusCallTerminated]){
         //call is terminated
     } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
-        //call just got changed to in call,
+
+        VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
+        [self presentViewController: videoChatController animated: YES completion: nil];
+
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
         NSLog(@"238.edgar.a.nunezgmail.com is logged in.");
@@ -95,6 +98,25 @@
         UIAlertView *callAlert = [[UIAlertView alloc] initWithTitle: @"Incoming V-Consult" message: @"You have an incoming V-Consult. Do you want to accept this consultation & begin a video session?" delegate: self cancelButtonTitle: @"No" otherButtonTitles: @"Yes", nil];
         [callAlert show];
     }
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 1: {
+            [self launchVideoChatWithUsername: nil andPass: nil];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void) launchVideoChatWithUsername: (NSString *) user andPass: (NSString *) password {
+    
+    VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
+    [self presentViewController: videoChatController animated: YES completion: nil];
+    
 }
 
 @end

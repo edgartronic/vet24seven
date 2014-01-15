@@ -11,4 +11,7 @@
 
 @interface VideoChatViewController : UIViewController
 
+@property (readwrite, strong, nonatomic) UIView *mainVideoUIView;
+@property (readwrite, strong, nonatomic) UIView *prevVideoUIView;
+
 @end

@@ -34,6 +34,7 @@
 		313D494B18862D7C005274B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494A18862D7C005274B0 /* SystemConfiguration.framework */; };
 		313D494D18862D8C005274B0 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494C18862D8C005274B0 /* libresolv.dylib */; };
 		313D494F18862D92005274B0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494E18862D92005274B0 /* libz.dylib */; };
+		313D4952188636B9005274B0 /* VideoChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D4951188636B9005274B0 /* VideoChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		313D494A18862D7C005274B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		313D494C18862D8C005274B0 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		313D494E18862D92005274B0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		313D4950188636B9005274B0 /* VideoChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoChatViewController.h; sourceTree = "<group>"; };
+		313D4951188636B9005274B0 /* VideoChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 		310B093D187A6291006C24DE /* vet24seven */ = {
 			isa = PBXGroup;
 			children = (
+				313D4950188636B9005274B0 /* VideoChatViewController.h */,
+				313D4951188636B9005274B0 /* VideoChatViewController.m */,
 				313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */,
 				313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */,
 				310B096C187A6302006C24DE /* iPad */,
@@ -311,6 +316,7 @@
 			files = (
 				310B094E187A6291006C24DE /* ViewController.m in Sources */,
 				310B0948187A6291006C24DE /* AppDelegate.m in Sources */,
+				313D4952188636B9005274B0 /* VideoChatViewController.m in Sources */,
 				310B0944187A6291006C24DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,6 @@
 
 @interface VideoChatViewController ()
 
-@property (readwrite, nonatomic) UIView *mainVideoUIView;
-@property (readwrite, nonatomic) UIView *prevVideoUIView;
-
 @end
 
 @implementation VideoChatViewController
@@ -27,7 +24,6 @@
          name:SHKConnectionStatusChangedNotification
          object:nil];
         
-        [ShowKit login: @"238.calbertlai" password: @"12341234"];
     }
     return self;
 }
@@ -44,6 +40,14 @@
     prevVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview: prevVideoUIView];
     
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.frame = CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44);
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    UIBarButtonItem *dismissButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(endCall)];
+    [items addObject: dismissButton];
+    [toolbar setItems:items animated: NO];
+    [self.view addSubview:toolbar];
+    
 }
 
 
@@ -52,8 +56,6 @@
     [ShowKit setState: self.prevVideoUIView forKey: SHKPreviewDisplayViewKey];
     [ShowKit setState: SHKVideoLocalPreviewEnabled forKey: SHKVideoLocalPreviewModeKey];
     
-    [ShowKit initiateCallWithSubscriber: @"238.calbertlai"];
-
 }
 
 - (void) viewDidDisappear:(BOOL)animated {
@@ -67,8 +69,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark -
-#pragma mark ShowKit callbacks
+- (void) endCall {
+    [ShowKit hangupCall];
+}
 
 - (void) connectionStateChanged: (NSNotification*) notification
 {
@@ -80,12 +83,12 @@
     
     if ([value isEqualToString: SHKConnectionStatusCallTerminated]){
         //call is terminated
-    } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
-        //call just got changed to in call,
+        [[NSNotificationCenter defaultCenter] removeObserver: self];
+        [self dismissViewControllerAnimated: YES completion: nil];
 
-        [ShowKit setState: mainVideoUIView forKey: SHKMainDisplayViewKey];
-        [ShowKit setState: prevVideoUIView forKey: SHKPreviewDisplayViewKey];
-        [ShowKit setState: SHKVideoLocalPreviewEnabled forKey: SHKPreviewDisplayViewKey];
+    } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
+
+        [ShowKit setState: SHKVideoInputDeviceResolution720p forKey: SHKVideoInputDeviceResolutionKey];
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
         NSLog(@"user logged in.");

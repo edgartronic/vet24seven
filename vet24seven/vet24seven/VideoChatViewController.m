@@ -40,6 +40,19 @@
     prevVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview: prevVideoUIView];
     
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.frame = CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44);
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    UIBarButtonItem *dismissButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(endCall)];
+    [items addObject: dismissButton];
+    [toolbar setItems:items animated: NO];
+    [self.view addSubview:toolbar];
+
+    
+}
+
+- (void) endCall {
+    [ShowKit hangupCall];
 }
 
 
@@ -79,10 +92,6 @@
 
     } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
         //call just got changed to in call,
-
-        [ShowKit setState: mainVideoUIView forKey: SHKMainDisplayViewKey];
-        [ShowKit setState: prevVideoUIView forKey: SHKPreviewDisplayViewKey];
-        [ShowKit setState: SHKVideoLocalPreviewEnabled forKey: SHKPreviewDisplayViewKey];
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
         NSLog(@"user logged in.");

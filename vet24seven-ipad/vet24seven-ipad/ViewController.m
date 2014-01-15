@@ -50,6 +50,7 @@
 - (void) launchVideoChatWithUsername: (NSString *) user andPass: (NSString *) password {
     
     VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
+    [ShowKit acceptCall];
     [self presentViewController: videoChatController animated: YES completion: nil];
     
 }
@@ -65,7 +66,7 @@
     
     if ([request.URL.absoluteString isEqualToString: @"http://demo.vet24seven.com/vet/dashboard.php?user_id=3"]) {
         [ShowKit login: @"238.calbertlai" password: @"12341234"];
-        NSLog(@"User 238.calbertlai is logged in. ");
+
     }
     
     return YES;
@@ -88,7 +89,7 @@
         //call just got changed to in call,
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
-        NSLog(@"user logged in.");
+        NSLog(@"User 238.calbertlai is logged in. ");
         
     } else if ([value isEqualToString: SHKConnectionStatusNotConnected]) {
         //user is no longer connected
@@ -97,8 +98,23 @@
         NSLog(@"user login failed.");
     } else if ([value isEqualToString: SHKConnectionStatusCallIncoming]) {
         //user has a call incoming, accept or reject the call
-        UIAlertView *callAlert = [UIAlertView alloc] initWithTitle: @"Incoming V-Consult" message: @"You have an incoming V-Consult. Do you want to accept this consultation & begin a video session?" delegate: self cancelButtonTitle: @"No" otherButtonTitles: @"Yes", nil];
+        UIAlertView *callAlert = [[UIAlertView alloc] initWithTitle: @"Incoming V-Consult" message: @"You have an incoming V-Consult. Do you want to accept this consultation & begin a video session?" delegate: self cancelButtonTitle: @"No" otherButtonTitles: @"Yes", nil];
         [callAlert show];
+    }
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 1: {
+            NSLog(@"Accepting call. Launching video chat window.");
+            [self launchVideoChatWithUsername: nil andPass: nil];
+        }
+            break;
+            
+        default: {
+            [ShowKit rejectCall];
+        }
+            break;
     }
 }
 
