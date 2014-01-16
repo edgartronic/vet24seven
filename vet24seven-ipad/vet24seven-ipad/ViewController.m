@@ -44,13 +44,15 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    //[self launchVideoChatWithUsername: nil andPass: nil];
+//    VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
+//    [self presentViewController: videoChatController animated: YES completion: nil];
+
 }
 
 - (void) launchVideoChatWithUsername: (NSString *) user andPass: (NSString *) password {
     
-    VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
     [ShowKit acceptCall];
+     VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
     [self presentViewController: videoChatController animated: YES completion: nil];
     
 }
@@ -63,11 +65,22 @@
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
+    NSString *vetDashboardURL = @"http://demo.vet24seven.com/vet/dashboard.php";
+    NSString *videoChatCommand = @"videochat";
     
-    if ([request.URL.absoluteString isEqualToString: @"http://demo.vet24seven.com/vet/dashboard.php?user_id=3"]) {
+    NSRange range = [request.URL.absoluteString rangeOfString: vetDashboardURL];
+    
+    if (range.location != NSNotFound) {
         [ShowKit login: @"238.calbertlai" password: @"12341234"];
-
     }
+    
+    NSRange videoChatDetect = [request.URL.absoluteString rangeOfString: videoChatCommand];
+    
+    if (videoChatDetect.location != NSNotFound) {
+        [ShowKit initiateCallWithSubscriber: @"238.edgar.a.nunezgmail.com"];
+    }
+    
+    NSLog(@"url: %@", request.URL.absoluteString);
     
     return YES;
 }
@@ -86,6 +99,8 @@
     if ([value isEqualToString: SHKConnectionStatusCallTerminated]){
         //call is terminated
     } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
+        NSLog(@"Call accepted. Launching video chat window.");
+        [self launchVideoChatWithUsername: nil andPass: nil];
         //call just got changed to in call,
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {

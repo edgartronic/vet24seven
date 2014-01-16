@@ -29,24 +29,39 @@
 }
 
 - (void) loadView {
-    mainVideoUIView = [[UIView alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    CGRect r = [UIScreen mainScreen].bounds;
+    
+    UIView *bg = [[UIView alloc] initWithFrame: r];
+    bg.backgroundColor = [UIColor lightGrayColor];
+    bg.autoresizesSubviews = YES;
+    self.view = bg;
+    
+    mainVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 1024, 724)];
     mainVideoUIView.backgroundColor = [UIColor darkGrayColor];
     mainVideoUIView.autoresizesSubviews = YES;
-    mainVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    self.view = mainVideoUIView;
-    
-    prevVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 2, (self.view.bounds.size.width / 2) - 10, (self.view.bounds.size.height / 2) - 10)];
-    prevVideoUIView.backgroundColor = [UIColor lightGrayColor];
-    prevVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview: prevVideoUIView];
+    [self.view addSubview: mainVideoUIView];
+//    
+//    prevVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 2, (self.view.bounds.size.width / 2) - 60, (self.view.bounds.size.height / 2) - 60)];
+//    prevVideoUIView.backgroundColor = [UIColor lightGrayColor];
+//    prevVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    [self.view addSubview: prevVideoUIView];
     
     UIToolbar *toolbar = [[UIToolbar alloc] init];
-    toolbar.frame = CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44);
-    NSMutableArray *items = [[NSMutableArray alloc] init];
-    UIBarButtonItem *dismissButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(endCall)];
-    [items addObject: dismissButton];
-    [toolbar setItems:items animated: NO];
-    [self.view addSubview:toolbar];
+    toolbar.barStyle = UIBarStyleDefault;
+    toolbar.frame = CGRectMake(0, 724, 1024, 44);
+    
+    UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithTitle: @"Done" style: UIBarButtonItemStyleDone target: self action: @selector(endCall)];
+    button1.style = UIBarButtonItemStyleDone;
+    
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target: self action: nil];
+    
+    NSArray *ar = [NSArray arrayWithObjects: button1, spacer, nil];
+    
+    //add buttons to the toolbar
+    [toolbar setItems: ar];
+    
+    //add toolbar to the main view
+    [self.view addSubview: toolbar];
     
 }
 
@@ -71,6 +86,7 @@
 
 - (void) endCall {
     [ShowKit hangupCall];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 - (void) connectionStateChanged: (NSNotification*) notification
@@ -87,8 +103,7 @@
         [self dismissViewControllerAnimated: YES completion: nil];
 
     } else if ([value isEqualToString: SHKConnectionStatusInCall]) {
-
-        [ShowKit setState: SHKVideoInputDeviceResolution720p forKey: SHKVideoInputDeviceResolutionKey];
+        
         
     } else if ([value isEqualToString: SHKConnectionStatusLoggedIn]) {
         NSLog(@"user logged in.");
@@ -102,5 +117,7 @@
         //user has a call incoming, accept or reject the call
     }
 }
+
+
 
 @end

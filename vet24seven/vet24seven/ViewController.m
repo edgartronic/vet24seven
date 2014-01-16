@@ -56,13 +56,6 @@
         [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
     }
     
-    NSString *confirmURL = @"http://demo.vet24seven.com/confirmation.php?referenceNumber=";
-    NSRange range = [request.URL.absoluteString rangeOfString: confirmURL];
-    
-    if (range.location != NSNotFound) {
-        [ShowKit initiateCallWithSubscriber: @"238.calbertlai"];
-    }
-    
     return YES;
 }
 
@@ -116,6 +109,7 @@
     
     VideoChatViewController *videoChatController = [[VideoChatViewController alloc] init];
     [self presentViewController: videoChatController animated: YES completion: nil];
+    [ShowKit acceptCall];
     
 }
 
