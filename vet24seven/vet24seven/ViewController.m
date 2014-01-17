@@ -10,7 +10,7 @@
 #import "VideoChatViewController.h"
 #import <ShowKit/ShowKit.h>
 
-#define VET24SEVEN_URL_IPHONE @"http://demo.vet24seven.com"
+#define VET24SEVEN_URL_IPHONE @"http://dev.vet24seven.com"
 
 @interface ViewController () {
     UIWebView *appWebView;
@@ -38,7 +38,8 @@
      selector:@selector(connectionStateChanged:)
      name:SHKConnectionStatusChangedNotification
      object:nil];
-
+    
+   
     
 }
 
@@ -52,7 +53,7 @@
     
     NSLog(@"request url: %@", request.URL.absoluteString);
     
-    if ([request.URL.absoluteString isEqualToString: @"http://demo.vet24seven.com/choose.php?user_id=3"]) {
+    if ([request.URL.absoluteString isEqualToString: @"http://dev.vet24seven.com/owner/"]) {
         [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
     }
     

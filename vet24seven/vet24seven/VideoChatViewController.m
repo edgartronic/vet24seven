@@ -29,19 +29,24 @@
 }
 
 - (void) loadView {
-    mainVideoUIView = [[UIView alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    
+    UIView *bgView = [[UIView alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    bgView.backgroundColor = [UIColor lightGrayColor];
+    self.view = bgView;
+    
+    mainVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 320, self.view.bounds.size.height - 44)];
     mainVideoUIView.backgroundColor = [UIColor darkGrayColor];
     mainVideoUIView.autoresizesSubviews = YES;
     mainVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    self.view = mainVideoUIView;
+    [self.view  addSubview: mainVideoUIView];
     
-    prevVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 2, (self.view.bounds.size.width / 2) - 10, (self.view.bounds.size.height / 2) - 10)];
+    prevVideoUIView = [[UIView alloc] initWithFrame: CGRectMake(self.view.bounds.size.width / 2 - 20, self.view.bounds.size.height / 2 - 60, (self.view.bounds.size.width / 2), (self.view.bounds.size.height / 2))];
     prevVideoUIView.backgroundColor = [UIColor lightGrayColor];
     prevVideoUIView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview: prevVideoUIView];
     
     UIToolbar *toolbar = [[UIToolbar alloc] init];
-    toolbar.frame = CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44);
+    toolbar.frame = CGRectMake(0, self.view.frame.size.height - 44, 320, 44);
     NSMutableArray *items = [[NSMutableArray alloc] init];
     UIBarButtonItem *dismissButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(endCall)];
     [items addObject: dismissButton];
