@@ -23,7 +23,6 @@
 		310B0963187A6291006C24DE /* vet24sevenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B0962187A6291006C24DE /* vet24sevenTests.m */; };
 		313D493718862C53005274B0 /* v24s-iPhone5-launch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */; };
 		313D493918862C5F005274B0 /* v24s-iphone5-launch-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */; };
-		313D493B18862CFF005274B0 /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D493A18862CFF005274B0 /* ShowKit.framework */; };
 		313D493D18862D3B005274B0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D493C18862D3B005274B0 /* OpenGLES.framework */; };
 		313D493F18862D43005274B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D493E18862D43005274B0 /* AVFoundation.framework */; };
 		313D494118862D4B005274B0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494018862D4B005274B0 /* QuartzCore.framework */; };
@@ -35,6 +34,7 @@
 		313D494D18862D8C005274B0 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494C18862D8C005274B0 /* libresolv.dylib */; };
 		313D494F18862D92005274B0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 313D494E18862D92005274B0 /* libz.dylib */; };
 		313D4952188636B9005274B0 /* VideoChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D4951188636B9005274B0 /* VideoChatViewController.m */; };
+		3D2B6E3F1929B82E00F76E90 /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B6E3E1929B82E00F76E90 /* ShowKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 		310B0962187A6291006C24DE /* vet24sevenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vet24sevenTests.m; sourceTree = "<group>"; };
 		313D493618862C53005274B0 /* v24s-iPhone5-launch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v24s-iPhone5-launch-icon.png"; sourceTree = "<group>"; };
 		313D493818862C5F005274B0 /* v24s-iphone5-launch-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v24s-iphone5-launch-screen.png"; sourceTree = "<group>"; };
-		313D493A18862CFF005274B0 /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShowKit.framework; sourceTree = "<group>"; };
 		313D493C18862D3B005274B0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		313D493E18862D43005274B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		313D494018862D4B005274B0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -82,6 +81,7 @@
 		313D494E18862D92005274B0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		313D4950188636B9005274B0 /* VideoChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoChatViewController.h; sourceTree = "<group>"; };
 		313D4951188636B9005274B0 /* VideoChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoChatViewController.m; sourceTree = "<group>"; };
+		3D2B6E3E1929B82E00F76E90 /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShowKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 				313D494D18862D8C005274B0 /* libresolv.dylib in Frameworks */,
 				313D494B18862D7C005274B0 /* SystemConfiguration.framework in Frameworks */,
 				313D494918862D73005274B0 /* AudioToolbox.framework in Frameworks */,
+				3D2B6E3F1929B82E00F76E90 /* ShowKit.framework in Frameworks */,
 				313D494718862D6A005274B0 /* CoreMedia.framework in Frameworks */,
 				310B093A187A6291006C24DE /* CoreGraphics.framework in Frameworks */,
 				313D494518862D5A005274B0 /* CoreVideo.framework in Frameworks */,
@@ -101,7 +102,6 @@
 				313D493F18862D43005274B0 /* AVFoundation.framework in Frameworks */,
 				313D493D18862D3B005274B0 /* OpenGLES.framework in Frameworks */,
 				310B093C187A6291006C24DE /* UIKit.framework in Frameworks */,
-				313D493B18862CFF005274B0 /* ShowKit.framework in Frameworks */,
 				310B0938187A6291006C24DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +141,7 @@
 		310B0936187A6291006C24DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D2B6E3E1929B82E00F76E90 /* ShowKit.framework */,
 				313D494E18862D92005274B0 /* libz.dylib */,
 				313D494C18862D8C005274B0 /* libresolv.dylib */,
 				313D494A18862D7C005274B0 /* SystemConfiguration.framework */,
@@ -151,7 +152,6 @@
 				313D494018862D4B005274B0 /* QuartzCore.framework */,
 				313D493E18862D43005274B0 /* AVFoundation.framework */,
 				313D493C18862D3B005274B0 /* OpenGLES.framework */,
-				313D493A18862CFF005274B0 /* ShowKit.framework */,
 				310B0937187A6291006C24DE /* Foundation.framework */,
 				310B0939187A6291006C24DE /* CoreGraphics.framework */,
 				310B093B187A6291006C24DE /* UIKit.framework */,
@@ -448,6 +448,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven/vet24seven-Prefix.pch";
@@ -471,6 +472,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven/vet24seven-Prefix.pch";
