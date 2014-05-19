@@ -10,7 +10,7 @@
 #import "VideoChatViewController.h"
 #import <ShowKit/ShowKit.h>
 
-#define VET24SEVEN_URL_IPHONE @"http://dev.vet24seven.com"
+#define VET24SEVEN_URL_IPHONE @"http://208.74.66.11/enterpi/index.php"
 
 @interface ViewController () {
     UIWebView *appWebView;
@@ -53,9 +53,9 @@
     
     NSLog(@"request url: %@", request.URL.absoluteString);
     
-    if ([request.URL.absoluteString isEqualToString: @"http://dev.vet24seven.com/owner/"]) {
-        [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
-    }
+//    if ([request.URL.absoluteString isEqualToString: @"http://dev.vet24seven.com/owner/"]) {
+//        [ShowKit login: @"238.edgar.a.nunezgmail.com" password: @"123456"];
+//    }
     
     return YES;
 }
