@@ -19,6 +19,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "v24s-ipad-launch-image-beta-portrait-VET.png",
       "scale" : "2x"
     },
     {
@@ -26,6 +27,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "v24s-ipad-launch-image-beta-landscape-VET.png",
       "scale" : "2x"
     }
   ],

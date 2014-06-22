@@ -5,14 +5,14 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "v24s-iphone5-launch-screen.png",
+      "filename" : "v24s-iPhone4-launch-image-beta.png",
       "scale" : "2x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "v24s-iphone5-launch-screen-1.png",
+      "filename" : "v24s-iPhone5-launch-image-beta.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"

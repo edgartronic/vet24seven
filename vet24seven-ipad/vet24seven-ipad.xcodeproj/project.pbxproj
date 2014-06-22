@@ -21,7 +21,6 @@
 		31576AEF187E4DA900BB62E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576AD1187E4DA800BB62E5 /* UIKit.framework */; };
 		31576AF7187E4DA900BB62E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31576AF5187E4DA900BB62E5 /* InfoPlist.strings */; };
 		31576AF9187E4DA900BB62E5 /* vet24seven_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */; };
-		31576B041884E4F100BB62E5 /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B031884E4F100BB62E5 /* ShowKit.framework */; };
 		31576B061884E51B00BB62E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B051884E51B00BB62E5 /* AVFoundation.framework */; };
 		31576B081884E53000BB62E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B071884E53000BB62E5 /* OpenGLES.framework */; };
 		31576B0A1884E53900BB62E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B091884E53900BB62E5 /* QuartzCore.framework */; };
@@ -33,6 +32,7 @@
 		31576B161884E58B00BB62E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B151884E58B00BB62E5 /* libz.dylib */; };
 		31576B181884E59400BB62E5 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31576B171884E59400BB62E5 /* libresolv.dylib */; };
 		31576B1B1884F59C00BB62E5 /* VideoChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */; };
+		3D6B496A1952991200783CF6 /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6B49691952991200783CF6 /* ShowKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,6 @@
 		31576AF4187E4DA900BB62E5 /* vet24seven-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vet24seven-ipadTests-Info.plist"; sourceTree = "<group>"; };
 		31576AF6187E4DA900BB62E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31576AF8187E4DA900BB62E5 /* vet24seven_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vet24seven_ipadTests.m; sourceTree = "<group>"; };
-		31576B031884E4F100BB62E5 /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShowKit.framework; sourceTree = "<group>"; };
 		31576B051884E51B00BB62E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31576B071884E53000BB62E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		31576B091884E53900BB62E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -78,6 +77,7 @@
 		31576B171884E59400BB62E5 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		31576B191884F59C00BB62E5 /* VideoChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoChatViewController.h; path = "vet24seven-ipad/VideoChatViewController.h"; sourceTree = SOURCE_ROOT; };
 		31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoChatViewController.m; path = "vet24seven-ipad/VideoChatViewController.m"; sourceTree = SOURCE_ROOT; };
+		3D6B49691952991200783CF6 /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShowKit.framework; path = ThirdParty/ShowKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 			files = (
 				31576B181884E59400BB62E5 /* libresolv.dylib in Frameworks */,
 				31576B161884E58B00BB62E5 /* libz.dylib in Frameworks */,
+				3D6B496A1952991200783CF6 /* ShowKit.framework in Frameworks */,
 				31576B141884E57C00BB62E5 /* SystemConfiguration.framework in Frameworks */,
 				31576B121884E57200BB62E5 /* AudioToolbox.framework in Frameworks */,
 				31576B101884E56900BB62E5 /* CoreMedia.framework in Frameworks */,
@@ -97,7 +98,6 @@
 				31576B081884E53000BB62E5 /* OpenGLES.framework in Frameworks */,
 				31576B061884E51B00BB62E5 /* AVFoundation.framework in Frameworks */,
 				31576AD2187E4DA800BB62E5 /* UIKit.framework in Frameworks */,
-				31576B041884E4F100BB62E5 /* ShowKit.framework in Frameworks */,
 				31576ACE187E4DA800BB62E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +137,7 @@
 		31576ACC187E4DA800BB62E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D6B49691952991200783CF6 /* ShowKit.framework */,
 				31576B171884E59400BB62E5 /* libresolv.dylib */,
 				31576B151884E58B00BB62E5 /* libz.dylib */,
 				31576B131884E57C00BB62E5 /* SystemConfiguration.framework */,
@@ -202,7 +203,6 @@
 		31576B021884E4F100BB62E5 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				31576B031884E4F100BB62E5 /* ShowKit.framework */,
 				31576B191884F59C00BB62E5 /* VideoChatViewController.h */,
 				31576B1A1884F59C00BB62E5 /* VideoChatViewController.m */,
 			);
@@ -256,6 +256,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Edgar Nunez";
 				TargetAttributes = {
+					31576AC9187E4DA800BB62E5 = {
+						DevelopmentTeam = 4326L6N74Q;
+					};
 					31576AEA187E4DA900BB62E5 = {
 						TestTargetID = 31576AC9187E4DA800BB62E5;
 					};
@@ -378,6 +381,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg .framework";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -394,6 +398,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -419,6 +424,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg .framework";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -427,6 +433,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -439,9 +446,12 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Edgar Nunez (WDKP22Y79J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Edgar Nunez (WDKP22Y79J)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven-ipad/ThirdParty",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
@@ -449,6 +459,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DE445DB5-6315-4CCE-B68D-B5985201C510";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -462,9 +473,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Edgar Nunez (4326L6N74Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Edgar Nunez (4326L6N74Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Nish/Desktop/LOLWUT?/Freelance_Work/vet24seven/vet24seven-ipad/ThirdParty",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vet24seven-ipad/vet24seven-ipad-Prefix.pch";
@@ -472,6 +485,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DE445DB5-6315-4CCE-B68D-B5985201C510";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

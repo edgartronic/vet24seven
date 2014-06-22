@@ -10,7 +10,7 @@
 #import "VideoChatViewController.h"
 #import <ShowKit/ShowKit.h>
 
-#define VET24SEVEN_URL_IPHONE @"http://208.74.66.11/enterpi/index.php"
+#define VET24SEVEN_URL_IPHONE @"http://beta.vet24seven.com/"
 
 @interface ViewController () {
     UIWebView *appWebView;

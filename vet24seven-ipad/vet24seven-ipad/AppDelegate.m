@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <ShowKit/ShowKit.h>
+
 
 @implementation AppDelegate
 
